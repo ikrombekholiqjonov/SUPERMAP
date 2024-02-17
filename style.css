@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  min-height: 10px;
+  /* border: 3px solid red; */
+}
+/* navbar */
+.navbar{
+  height: 55px;
+  padding: 10px;
+}
+.navbar-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-links{
+  display: flex;
+  gap: 80px;
+}
+.navbar-icons{
+  display: flex;
+  gap: 20px;
+}
+.top-menu{
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  display: none;
+  justify-content: space-between;
+}
+.top-menu div{
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: black;
+}
+@media (max-width: 768px){
+  .navbar-links, .navbar-icons{
+    display: none;
+  }
+  .top-menu{
+    display: flex;
+  }
+}
+.header-content{
+  position: relative;
+  height: 600px;
+  background: rgba(36, 40, 44, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.header-content h1{
+  z-index: 1;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 59.883px;
+  font-weight: 700;
+  line-height: 66px; /* 110.215% */
+  text-align: center;
+}
+/* @media (max-width: 768px){
+  .header-content h1{
+    font-size: 40px;
+  }
+  .header-content{
+    height: 400px;
+  }
+}
+@media (max-width: 576px){
+  .header-content h1{
+    font-size: 30px;
+  }
+  .header-content{
+    height: 200px;
+  }
+} */
+/* kadastr */
+.kadastr-title{
+  margin-top: 96px;
+  color: #000;
+  font-family: Arial;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 66px; /* 165% */
+  text-transform: uppercase;
+  text-align: center;
+}
+.kadastr-content{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 87px;
+  flex-wrap: wrap;
+}
+.kadastr-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.kadastr-card img{
+  width: 100px;
+}
+.kadastr-card p{
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 114.286% */
+  text-transform: capitalize;
+  /* max-width: 350px;} */
+  /* @media (max-width: 768px){
+  .kadastr-title{
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .kadastr-content{
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .kadastr-content img{
+    width: 70px;
+  }
+  } */
